@@ -14,6 +14,8 @@
 	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
 	-->
 	
+	
+	<!-- http://127.0.0.1:8080/cxf-spring/services/demoService?wsdl -->
 	<jaxws:server id="demoService" address="/demoService" serviceClass="mang.demo.cxf.spring.ws.WsDemoService">
 		<jaxws:serviceBean>
 			<bean class="mang.demo.cxf.spring.ws.impl.WsDemoServiceImpl"></bean>
